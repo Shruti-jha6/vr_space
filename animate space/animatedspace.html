@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+          
+          <img id="milk"src="milky way.jpg" alt="">
+          <img id="sunny"src="sun.jpg" alt="">
+          <img id="rock"src="rock.jpg" alt="">
+
+          <img id="rust"src="rustyplanet.jpg" alt="">
+
+          <img id="scratch"src="shiny scratched.jpg" alt="">
+          <img id="as"src="astroid.jpg" alt="">
+          <img id="earth"src="earthreal.jpg" alt="">
+
+
+
+
+  
+  
+        </a-assets>
+      
+        <a-sky src="#milk"></a-sky>
+        <!--sun-->
+        <a-sphere position="0 0 0" radius="20"  color="yellow" src="sun.jpg" normal-map="#sunny" repeat 5 5 animation="property: rotation; to:0 360 0;loop:true;dur:10000"></a-sphere>
+         <!--mercury-->
+         <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:8000;easing:linear">
+            <a-sphere position="35 -0.101 0" scale="1 1 1" radius="1"  color="pink"></a-sphere>
+
+
+         </a-entity>
+
+        <!--venus-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:9000;easing:linear">
+            <a-sphere position="-47 -0.101 0" scale="1 1 1" radius="1.2"  color="#E67E22"></a-sphere>
+
+            
+
+        </a-entity>
+        <!--earth-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:9000;easing:linear">
+            <a-sphere position="55 -0.101 0" scale="1 1 1" radius="1.3" src="earthreal.jpg" normal-map="#earth" repeat 5 5></a-sphere>
+
+            
+
+        </a-entity>
+
+        <!--mars-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:13000;easing:linear">
+            <a-sphere position="-63 -0.101 0" scale="1 1 1" radius="1.3"  color="red"></a-sphere>
+
+            
+
+        </a-entity>
+
+        <!--jupiter-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:16000;easing:linear">
+            <a-sphere position="85 -0.101 0" scale="1 1 1" radius="3.2"  color="brown" src="shiny scratched.jpg" normal-map="#scratch" repeat 5 5></a-sphere>
+
+            
+
+        </a-entity>
+
+         <!--saturn-->
+         <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:17000;easing:linear">
+            <a-sphere position="101 -0.101 0" scale="1 1 1" radius="2.1" color="dark grey"></a-sphere>
+            <a-ring position="100 -0.101 0" radius-inner="4" radius-outer="4.5" color="white" opacity="0.9" rotation="-75 5 0"></a-ring>
+
+
+            
+
+         </a-entity>
+
+        <!--uranus-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:9000;easing:linear">
+            <a-sphere position="-118 -0.101 0" scale="1 1 1" radius="2.4"  color="#DDA0DD"></a-sphere>
+
+
+            
+
+        </a-entity>
+
+        <!--neptune-->
+        <a-entity animation="property: rotation;to:0 360 0;loop:true;dur:18500;easing:linear">
+            <a-sphere position="130 -0.101 0" scale="1 1 1" radius="2.5"  color="blue"></a-sphere>
+
+            
+
+        </a-entity>
+
+        <!--axissssss-->
+        <a-ring position="0 0 0" radius-inner="34.8" radius-outer="35.3" color="#555" opacity="0.3" rotation="-87 0 0"></a-ring>
+        <a-ring position="0 0 0" radius-inner="46.7" radius-outer="47.4" color="#555" opacity="0.3" rotation="-86.8 0 0"></a-ring>
+        <a-ring position="0 0 0" radius-inner="54.6" radius-outer="55.5" color="#555" opacity="0.3" rotation="-86.6 0"></a-ring>
+        <a-ring position="0 0 0" radius-inner="62.6" radius-outer="66.5" color="#555" opacity="0.3" rotation="-86.4 0 0"></a-ring>
+
+
+        <!--astroid belt-->
+        <a-ring position="0 0 0" radius-inner="68" radius-outer="78"  opacity="0.5" rotation="-86.2 0 0" src="astroid.jpg" normal-map="#as" repeat 500 500></a-ring>
+
+
+        <!--uranus ring-->
+         <!--<a-ring position="100 -0.101 0" radius-inner="4" radius-outer="4.5" color="white" opacity="0.9" rotation="-75 5 0"></a-ring>-->
+
+
+
+        <a-ring position="0 0 0" radius-inner="84.6" radius-outer="85.5" color="#555" opacity="0.3" rotation="-86.2 0 0"></a-ring>
+
+        <a-ring position="0 0 0" radius-inner="100.6" radius-outer="101.6" color="#555" opacity="0.3" rotation="-86 0 0"></a-ring>
+
+        <a-ring position="0 0 0" radius-inner="117.6" radius-outer="118.6" color="#555" opacity="0.3" rotation="-85.8 0 0"></a-ring>
+
+        <a-ring position="0 0 0" radius-inner="129.5" radius-outer="130.6" color="#555" opacity="0.3" rotation="-85.6 0 0"></a-ring>
+
+
+        
+
+
+    </a-scene>
+    
+</body>
+</html>
